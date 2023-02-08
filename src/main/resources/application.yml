@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/fayaje?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: S@liou1946
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  main:
+    allow-circular-references: true
+  mvc:
+    servlet:
+      path: /fayaje
+  devtools:
+    add-properties: false
